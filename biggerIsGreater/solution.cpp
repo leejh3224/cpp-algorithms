@@ -107,6 +107,17 @@ string biggerIsGreater(string w)
     }
   }
 
+  /*
+   * ex) dkhc
+   * d보다 작은 khc는 내림차순으로 정렬돼있다.
+   * 그러므로 j = d, k = h(d보다 크고 k보다 작은 글자)가 되며,
+   * 
+   * 먼저 j와 k가 위치를 바꾸고,
+   * j의 다음 요소인 k부터 끝까지 오름차순으로 정렬한다.
+   * 
+   * 만약 *j < *it인 상황이 없다면 자신이 가장 큰 순열이라는 의미이므로 no answer를 반환
+   */
+
   return "no answer";
 }
 
