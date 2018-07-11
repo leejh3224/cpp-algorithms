@@ -34,11 +34,18 @@ vector<int> stones(int n, int a, int b)
   }
 
   for (int i = 0; i < n; i++)
-    answer.push_back((n - i - 1) * a + i * b);
+  {
+    int num_a = i;
+    int num_b = n - i - 1;
 
-  sort(answer.begin(), answer.end(), [](int x, int y) {
-    return x < y;
-  });
+    if (a < b)
+    {
+      num_a = n - i - 1;
+      num_b = i;
+    }
+
+    answer.push_back(num_a * a + num_b * b);
+  }
 
   return answer;
 }
