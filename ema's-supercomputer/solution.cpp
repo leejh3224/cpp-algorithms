@@ -5,6 +5,17 @@
  * 2. and compare each pluses that if they overlaps each other (use bitwise and operation)
  * 3. get the product of area
  * 
+ * Lessons learned:
+ *  1. Bitset container
+ *    - you can't use bitset container unless you have constexpr that can be set befor runtime.
+ *    - if you want to do it on runtime use vector<bool> instead
+ *    - or initialize huge bitset that is capable of accepting biggest input
+ *  2. nested vectors
+ *    - you'll get segmetation fault when you're using nested vectors without specifying the size of outermost vector.
+ *    - do this: vector<vector<bool> v(size);
+ *  3. need to calculate overlapped area?
+ *    - use bitwise operation!
+ *  
  */
 class Plus
 {
