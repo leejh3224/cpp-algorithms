@@ -4,6 +4,13 @@
     "tuple": "cpp",
     "type_traits": "cpp",
     "utility": "cpp",
-    "iostream": "cpp"
+    "iostream": "cpp",
+    "bitset": "cpp",
+    "initializer_list": "cpp",
+    "iterator": "cpp",
+    "string": "cpp",
+    "string_view": "cpp",
+    "__locale": "cpp",
+    "ios": "cpp"
   }
 }
